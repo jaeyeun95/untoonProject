@@ -14,6 +14,8 @@ public class ClssDao {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
+	public ClssDao() {}
+	
 	public ArrayList<Clss> selectList() {
 		List<Clss> list = sqlSession.selectList("clssMapper.selectAll");
 		 
