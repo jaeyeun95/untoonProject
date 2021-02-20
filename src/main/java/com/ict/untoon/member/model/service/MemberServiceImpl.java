@@ -28,11 +28,10 @@ public class MemberServiceImpl implements MemberService {
 		return result;
 	}
 	
-	@Override
-	public int insertTeMember(Member m) {
-		int result = mDao.insertTeMember(m);
-		return result;
-	}
+	/*
+	 * @Override public int insertTeMember(Member m) { int result =
+	 * mDao.insertTeMember(m); return result; }
+	 */
 	
 
 	@Override
@@ -57,6 +56,11 @@ public class MemberServiceImpl implements MemberService {
 	public int nicknameCheck(String nickname) {
 		
 		return mDao.nicknameCheck(nickname);
+	}
+	@Override
+	public int emailCheck(String email) {
+		
+		return mDao.emailCheck(email);
 	}
 
 

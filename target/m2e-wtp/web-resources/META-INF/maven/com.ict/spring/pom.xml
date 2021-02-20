@@ -242,6 +242,41 @@
 			<artifactId>json-lib-ext-spring</artifactId>
 			<version>1.0.2</version>
 		</dependency>
+		
+		<!-- 가영이가 추가했어용
+			구글 : "프로젝트가 위치한 물리적 경로에 한글이 들어가있다보니 아래와 같은 오류가 발생하면서 log4j가 제대로 동작을 안하는것이다."
+			래서 이거 넣으면 된다고 해서 넣었더니 진짜 되용 -->
+		<dependency>
+    		<groupId>xerces</groupId>
+    		<artifactId>xercesImpl</artifactId>
+    		<version>2.9.1</version>
+		</dependency>
+		<!-- 요기까지 가영이가 한거에용 -->
+		
+		<!-- ▼mail관한 lib  -->
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context-support</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<dependency>
+		    <groupId>com.sun.mail</groupId>
+		    <artifactId>javax.mail</artifactId>
+		    <version>1.6.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4</version>
+		</dependency>
+		<!-- ▲ mail관련 라이브러리 -->
+		
 	</dependencies>
     <build>
         <plugins>

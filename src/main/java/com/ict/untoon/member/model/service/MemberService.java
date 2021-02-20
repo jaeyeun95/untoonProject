@@ -8,7 +8,7 @@ public interface MemberService {
 	
 	int insertMember(Member m);
 	
-	int insertTeMember(Member m);
+	/* int insertTeMember(Member m); */
 	
 	int updateMember(Member m);
 	
@@ -17,6 +17,8 @@ public interface MemberService {
 	int idCheck(String id);
 	
 	int nicknameCheck(String nickname);
+
+	int emailCheck(String email);
 
 	
 }
