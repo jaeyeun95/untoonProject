@@ -34,7 +34,7 @@
 	
 	<select id="selectClss" parameterType="_int" resultMap="clssResultSet">
 		select * from clss
-		where cid = #{ cid }
+		where cid = #{ cid } 
 	</select>
 </mapper>
 

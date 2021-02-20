@@ -20,9 +20,9 @@ public class ClssController {
 	
 	// 강사 클래스 목록조회
 	@RequestMapping("tclist.do")
-	public String tClssList(Model model) {
+	public String tClssListMethod(Model model) {
 		
-		ArrayList<Clss> list = cService.selectAll();
+		ArrayList<Clss> list = cService.tClssList();
 		
 		if(list.size() > 0) {
 			System.out.println("목록있음");
@@ -49,10 +49,10 @@ public class ClssController {
 	
 	//강사 클래스 상세 보기
 	@RequestMapping("tcdetail.do")
-	public String selectTclss(@RequestParam("cid") int cid, Model model
+	public String selectTclssMethod(@RequestParam("cid") int cid, Model model
 								) {
 //		HttpSession session
-		Clss clss = cService.selectClss(cid);
+		Clss clss = cService.selectTclss(cid);
 		
 		if(clss != null) {
 			System.out.println("값있음");

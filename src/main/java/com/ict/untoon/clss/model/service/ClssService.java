@@ -6,9 +6,9 @@ import com.ict.untoon.clss.model.vo.Clss;
 
 public interface ClssService {
 
-	ArrayList<Clss> selectAll();	// 강사 강의 목록 조회용
+	ArrayList<Clss> tClssList();	// 강사 강의 목록 조회용
 
-	Clss selectClss(int cid);
+	Clss selectTclss(int cid);	// 클래스 상세보기
 
 }
 

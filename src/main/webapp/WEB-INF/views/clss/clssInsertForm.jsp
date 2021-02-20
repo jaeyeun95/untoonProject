@@ -69,19 +69,24 @@ input[type=file] {
 <script type="text/javascript">
 <!-- 다음 페이지 누르면 실행되는 함수 -->
 $(function(){
-	nextForm();
+	$(".insertForm1").css('display','block');
+	$(".insertForm2").css('display','none');
+	$(".insertForm3").css('display','none');
+	$(".insertForm4").css('display','none');
+	
+	 nextForm();
 	
 	$(".next button on").on("click", function(){
 		nextForm();
-	})
+	}) 
 });
 
-function nextForm(){
+/*  function nextForm(){
 	$(".insertForm1").hide();
 	$(".insertForm2").show();
 	$(".insertForm3").hide();
 	$(".insertForm4").hide();
-}
+}  */
 
 /* $(".insertForm1").click(function(){
 	$(".insertForm1").show();
